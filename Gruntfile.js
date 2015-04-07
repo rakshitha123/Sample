@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                     'Created Date: <%= grunt.template.today("yyyy-mm-dd") %>' +
                     '\n */ \n'
         },
-        src: 'js/*.js',
+        src: ['js/*.js'],
         dest: 'js/concat.js'
       }
     },
@@ -20,10 +20,11 @@ module.exports = function(grunt) {
         //  banner for inserting at the top of the result
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
      },
-     build: {
-        src: 'js/concat.js',
-        dest: 'js/concat.min.js'
-     }
+     dist: {
+	   files:{
+	     'js/concat.min.js':['<%=concat.dist.dest%>']
+       }
+	 }
     },
 	jenkins: {
       serverAddress: 'http://localhost:8080'

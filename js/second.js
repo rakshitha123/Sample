@@ -1,1 +1,3 @@
-// second file
+function test2() {
+	alert();
+}

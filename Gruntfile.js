@@ -24,9 +24,15 @@ module.exports = function(grunt) {
         src: 'js/concat.js',
         dest: 'js/concat.min.js'
      }
+    },
+	jenkins: {
+      serverAddress: 'http://localhost:8080'
+    , username: 'icefresh'                       
+    , password: 'icejen@1'                   
     }
 	
 });
+runt.loadNpmTasks('grunt-jenkins');
 
 grunt.loadNpmTasks('grunt-contrib-concat');
  

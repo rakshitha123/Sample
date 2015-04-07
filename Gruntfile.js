@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     }
 	
 });
-runt.loadNpmTasks('grunt-jenkins');
+grunt.loadNpmTasks('grunt-jenkins');
 
 grunt.loadNpmTasks('grunt-contrib-concat');
  

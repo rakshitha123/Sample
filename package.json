@@ -1,17 +1,35 @@
 {
   "name": "sample",
-  "version": "1.0.0",
-  "description": "Testing project",
-  "main": "gruntfile.js",
-  "scripts": {
+  
+"version": "1.0.0",
+  
+"description": "Testing project",
+ 
+ "main": "gruntfile.js",
+  
+"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
+ 
+ "keywords": [
     "gruntjs"
   ],
-  "author": "Rakshitha",
-  "license": "ISC",
-  "devDependencies": {
-    "grunt-jenkins": "^0.5.0"
-  }
+ 
+ "author": "Rakshitha",
+  
+"license": "ISC",
+  
+"devDependencies": {
+ 
+  "grunt": "^0.4.5",
+   
+  "grunt-jenkins": "^0.5.0",
+    
+  "grunt-contrib-concat": "^0.5.1",
+    
+  "grunt-contrib-uglify": "^0.8.1"
+
+ 
+}
+
 }

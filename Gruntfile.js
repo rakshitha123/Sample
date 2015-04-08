@@ -35,7 +35,7 @@ module.exports = function(grunt) {
    
     },
 	
-	imagemin: {                          // Task 
+	/*imagemin: {                          // Task 
     static: {                          // Target 
       options: {                       // Target options 
         optimizationLevel: 3,
@@ -54,9 +54,9 @@ module.exports = function(grunt) {
         cwd: 'src/',                   // Src matches are relative to this path 
         src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match 
         dest: 'dist/'                  // Destination path prefix 
-      }]
+ /*     }]
     }
-  } ,
+  } ,*/
 	
 	jenkins: {
       serverAddress: 'http://localhost:8080'
@@ -73,7 +73,7 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 
 grunt.loadNpmTasks('grunt-usemin');
 
-grunt.loadNpmTasks('grunt-contrib-imagemin');
+//grunt.loadNpmTasks('grunt-contrib-imagemin');
  
-grunt.registerTask('default', ['useminPrepare','concat', 'uglify','usemin','imagemin']); 
+grunt.registerTask('default', ['useminPrepare','concat', 'uglify','usemin']); 
 }
